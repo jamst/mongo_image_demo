@@ -1,19 +1,19 @@
 development:
-  host: localhost
+  host: "192.168.0.238"
   port: 27017
-  database: imgdb
+  database: test
   
 test:
-  host: localhost
+  host: "192.168.0.238"
   port: 27017
-  database: imgdb
+  database: test
   
 staging:
-  host: localhost
+  host: "192.168.0.238"
   port: 27017
-  database: imgdb
+  database: test
   
 production:
-  host: localhost
+  host: "192.168.0.238"
   port: 27017
-  database: imgdb  
+  database: test 

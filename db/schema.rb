@@ -13,21 +13,11 @@
 
 ActiveRecord::Schema.define(version: 20160802140137) do
 
-  create_table "assets", force: :cascade do |t|
-    t.string   "attachment_content_type"
-    t.string   "attachment_file_name"
-    t.datetime "created_at",              null: false
-    t.datetime "updated_at",              null: false
-  end
-
   create_table "avatars", force: :cascade do |t|
     t.string   "attachment_content_type"
     t.string   "attachment_file_name"
     t.datetime "created_at",              null: false
     t.datetime "updated_at",              null: false
   end
-
-# Could not dump table "users" because of following NoMethodError
-#   undefined method `[]' for nil:NilClass
 
 end

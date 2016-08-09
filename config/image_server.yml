@@ -1,19 +1,19 @@
 development:
   scheme: http
-  host: localhost
-  port: 5555
+  host: 192.168.0.238
+  port: 80
   
 test:
   scheme: http
   host: localhost
-  port: 5555
+  port: 80
   
 staging:
   scheme: http
   host: localhost
-  port: 5555
+  port: 80
   
 production:
   scheme: http
   host: localhost
-  port: 5555
+  port: 80
