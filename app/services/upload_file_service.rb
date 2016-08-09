@@ -6,8 +6,8 @@ class UploadFileService
 
   def call
     # 指定了fs这个桶，也可指向ak47
-    grid = $mongo.database.fs
-    grid.upload_from_stream(filename, @file)
+    #grid = $mongo.database.fs
+    #grid.upload_from_stream(filename, @file)
     res = {
       filename: filename,
       content_type: @file.content_type

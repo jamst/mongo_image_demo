@@ -3,8 +3,7 @@ class CreateAvatars < ActiveRecord::Migration
     create_table :avatars do |t|
       t.string :attachment_content_type
       t.string :attachment_file_name
-
-      t.timestamps null: false
+      t.timestamps 
     end
   end
 end
