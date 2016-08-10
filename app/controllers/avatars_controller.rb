@@ -15,6 +15,7 @@ class AvatarsController < ApplicationController
     @avatar.attachment_file_name = res[:filename]
     @avatar.attachment_content_type = res[:content_type]
     if @avatar.save
+      @avatar.ebuychem_attachments.create(:attachment_file => file )
       redirect_to action: 'index'
     else
       render :new

@@ -20,12 +20,14 @@ ActiveRecord::Schema.define(version: 20160809035324) do
     t.datetime "updated_at"
   end
 
-  create_table "order_documents", force: :cascade do |t|
-    t.string   "attachment",              limit: 255
-    t.string   "attachment_content_size", limit: 255
-    t.string   "attachment_content_type", limit: 255
-    t.string   "attachment_type",         limit: 255
-    t.integer  "attachment_type_id",      limit: 4
+  create_table "ebuychem_attachments", force: :cascade do |t|
+    t.string   "path",            limit: 255
+    t.string   "name",            limit: 255
+    t.string   "file_size",       limit: 255
+    t.string   "content_type",    limit: 255
+    t.string   "attachment_type", limit: 255
+    t.integer  "attachment_id",   limit: 4
+    t.integer  "upload_by",       limit: 4
     t.datetime "created_at"
     t.datetime "updated_at"
   end

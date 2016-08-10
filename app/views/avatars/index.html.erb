@@ -1,7 +1,11 @@
 <h2>Avatar List</h2>
 <ul>
   <%- @avatars.each do |avatar| %>
-    <li><%= image_tag avatar.attachment_path, width: '300px', heigh: '300px' %></li>
+    <li>
+    <%= image_tag avatar.avatar_attachment_path, width: '300px', heigh: '300px', title: avatar.avatar_attachment_name %>
+    <br/><br/>
+    <%= link_to avatar.avatar_attachment_name, avatar.avatar_attachment_path %>
+    </li>
   <%- end -%>
 </ul>
 <%= link_to 'New Avatar', new_avatar_path %>
