@@ -11,9 +11,9 @@ test:
 staging:
   host: "192.168.2.21"
   port: 27017
-  database: test
+  database: whmall_test
   
 production:
   host: "192.168.2.21"
   port: 27017
-  database: test 
+  database: whmall_test 
