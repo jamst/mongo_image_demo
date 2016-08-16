@@ -2,7 +2,7 @@ class Avatar < ActiveRecord::Base
 
   def attachment_path
     mongo_server = "#{MONGO_ATTACHMENT_SERVER['scheme']}://#{MONGO_ATTACHMENT_SERVER['host']}:#{MONGO_ATTACHMENT_SERVER['port']}"
-    "#{mongo_server}/nb/#{attachment_file_name}"
+    "#{mongo_server}/#{MONGO_ATTACHMENT_SERVER['bucket']}/#{attachment_file_name}"
   end
 
   include AttachmentPath

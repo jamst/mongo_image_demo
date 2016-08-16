@@ -1,4 +1,4 @@
-class PurchaseContract < OrderDocument
+class PurchaseContract < EbuychemAttachment
   belongs_to :avatar, foreign_key: :attachment_type_id , inverse_of: :purchase_contract , touch:true
 
   attr_accessor :attachment_file,:avatar

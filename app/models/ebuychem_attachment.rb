@@ -21,7 +21,7 @@ class EbuychemAttachment < ApplicationRecord
 
   def attachment_path
     mongo_server = "#{MONGO_ATTACHMENT_SERVER['scheme']}://#{MONGO_ATTACHMENT_SERVER['host']}:#{MONGO_ATTACHMENT_SERVER['port']}"
-    "#{mongo_server}/nb/#{store_dir}/#{self.path}"
+    "#{mongo_server}/#{MONGO_ATTACHMENT_SERVER['bucket']}/#{store_dir}/#{self.path}"
   end
 
   def attachment_to_mongodb
