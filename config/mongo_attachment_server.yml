@@ -1,19 +1,23 @@
 development:
   scheme: http
-  host: 192.168.0.238
+  host: "192.168.0.238"
   port: 80
+  bucket: "nb"
   
 test:
   scheme: http
-  host: localhost
+  host: "192.168.0.238"
   port: 80
+  bucket: "nb"
   
 staging:
   scheme: http
-  host: localhost
-  port: 80
+  host: "122.224.5.210"
+  port: 38889
+  bucket: "test"
   
 production:
   scheme: http
-  host: localhost
-  port: 80
+  host: "122.224.5.210"
+  port: 38889
+  bucket: "test"

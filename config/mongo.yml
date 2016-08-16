@@ -9,11 +9,11 @@ test:
   database: test
   
 staging:
-  host: "192.168.0.238"
+  host: "192.168.2.21"
   port: 27017
   database: test
   
 production:
-  host: "192.168.0.238"
+  host: "192.168.2.21"
   port: 27017
   database: test 
