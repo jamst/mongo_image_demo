@@ -7,7 +7,7 @@ namespace :report do
         next if File.directory?(f)
         next if f =~ /.DS_Store/
         @avatar = Avatar.new
-            grid = $mongo.database.fs
+            grid = $mongo.database.test
             file_name = f.sub(root,'')
             file_name = "jamst/customer_order/#{file_name}"
             grid.upload_from_stream(file_name, file)
