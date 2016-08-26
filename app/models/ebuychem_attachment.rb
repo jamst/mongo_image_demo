@@ -25,8 +25,7 @@ class EbuychemAttachment < ApplicationRecord
   end
 
   def attachment_to_mongodb
-    # 存到mongodb gridfs，这里指定了fs这个桶，也可指向ak47
-    grid = $mongo.database.test
+    grid = $mongo.database.fs
     grid.upload_from_stream("#{store_dir}/#{self.path}", attachment_file)
   end
 
